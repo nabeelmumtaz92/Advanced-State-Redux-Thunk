@@ -1,11 +1,19 @@
+// src/App.js
 import React from 'react';
-import './App.css';
+import { Provider } from 'react-redux';
+import store from './store';
+import NameInput from './components/NameInput';
+import NationalityResult from './components/NationalityResult';
 
 function App() {
   return (
-    <div className="App">
-      Async Redux Project
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <h1>Nationality Predictor</h1>
+        <NameInput />
+        <NationalityResult />
+      </div>
+    </Provider>
   );
 }
 
