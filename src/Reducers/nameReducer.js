@@ -1,0 +1,6 @@
+import {
+    FETCH_NATIONALITY_REQUEST, 
+    FETCH_NATIONALITY_SUCCESS, 
+    FETCH_NATIONALITY_FAILURE,
+} from '../actions/nameActions';
+

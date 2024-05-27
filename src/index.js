@@ -1,10 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { combineReducers } from 'redux';
+import nameReducer from './nameReducer';
 
-import App from './App';
-import './index.css';
-
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+export default combineReducers({
+  name: nameReducer, 
+});
